@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Train Station Manager</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Train Station Tycoon</h1>
+        <div id="stats">
+            <p>Passengers in Train: <span id="passenger-count">0</span> / 5</p>
+            <p>Trains Dispatched: <span id="train-count">0</span></p>
+        </div>
+        
+        <div id="platform">
+            <div id="train">🚂 Train Waiting (Click passengers to board)</div>
+            <div id="waiting-area">
+                <!-- Passengers will spawn here -->
+            </div>
+        </div>
+
+        <button id="spawn-btn" onclick="spawnPassenger()">Call Passenger</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
